@@ -1,0 +1,86 @@
+
+.container {
+    height: 40rem;
+    width: 40rem;
+    border: 1px solid transparent;
+    margin-left: 35rem;
+    display: flex;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    width: 40rem;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+}
+
+
+.nav--logo_text{
+    color: #61DAFB;
+    margin-right:auto;
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+.toggler{
+    display: flex;
+    flex-direction: row;
+    margin-right: 1rem;
+
+}
+
+.toggler--dark{
+   margin-left: 5%;
+}
+
+.toggler--slider{
+    width: 4rem;
+    height: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid black;
+    background-color: black;
+    margin-top:10%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.toggler--slider--circle{
+    width:1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 1%;
+
+}
+/*dark mode effects for nav */
+nav.dark{
+    background-color: #21222A;
+}
+
+nav.dark .toggler--slider{
+    background-color: white;
+    border-color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav.dark .toggler--slider--circle{
+    background-color: #21222A;
+    align-items: flex-end;
+}
+nav.dark .toggler
+{
+    color: white;
+}
+nav.dark .toggler--dark
+{
+    font-weight: bold;
+}
+
+.container.dark{
+    background-color: #3d3d46;
+}
