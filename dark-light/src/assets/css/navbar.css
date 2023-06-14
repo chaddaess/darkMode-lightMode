@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
 .container {
     height: 40rem;
     width: 40rem;
@@ -6,6 +7,7 @@
     margin-left: 35rem;
     display: flex;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Karla', sans-serif;
 }
 
 nav{
@@ -34,7 +36,13 @@ nav{
 
 .toggler--dark{
    margin-left: 5%;
+    opacity: 0.5;
 }
+.toggler--light{
+    font-weight: bold;
+    opacity: 1;
+}
+
 
 .toggler--slider{
     width: 4rem;
@@ -79,6 +87,12 @@ nav.dark .toggler
 nav.dark .toggler--dark
 {
     font-weight: bold;
+    opacity: 1;
+}
+
+nav.dark .toggler--light
+{
+    opacity: 0.5;
 }
 
 .container.dark{
